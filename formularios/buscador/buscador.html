@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Buscador | Enciclopedia médica</title>
+</head>
+
+<body>
+    <header>
+        <h1>Buscador de artículos</h1>
+        <nav>
+            <a href="/index.html">Inicio</a> |
+            <a href="buscador.html">Buscador</a> |
+            <a href="/formularios/contacto/contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Realizar búsqueda</h2>
+        <p>Rellene uno o varios campos para filtrar los resultados. Los campos marcados con <strong>*</strong> son
+            obligatorios.</p>
+
+        <form action="respuestaBuscador.html" method="get">
+
+            <!-- Descripción -->
+            <label for="descripcion">Descripción: *</label><br>
+            <input type="text" id="descripcion" name="descripcion" required><br><br>
+
+            <!-- Causas -->
+            <label for="causas">Causas:</label><br>
+            <input type="text" id="causas" name="causas"><br><br>
+
+            <!-- Síntomas -->
+            <fieldset>
+                <legend>Síntomas:</legend>
+                <label for="sintomas">Seleccione uno o varios síntomas:</label><br>
+                <select id="sintomas" name="sintomas" multiple size="5">
+                    <option value="fiebre">Fiebre</option>
+                    <option value="vomito">Vómito</option>
+                    <option value="diarrea">Diarrea</option>
+                    <option value="dolor_muscular">Dolor muscular</option>
+                    <option value="cansancio">Cansancio</option>
+                </select>
+            </fieldset><br>
+
+            <!-- Pruebas y exámenes -->
+            <fieldset>
+                <legend>Pruebas y exámenes:</legend>
+                <label for="pruebas">Seleccione una o varias pruebas:</label><br>
+                <select id="pruebas" name="pruebas" multiple size="5">
+                    <option value="analisis_sangre">Análisis de sangre</option>
+                    <option value="ecografia">Ecografía</option>
+                    <option value="radiografia">Radiografía</option>
+                    <option value="tomografia">Tomografía</option>
+                    <option value="ultrasonido">Ultrasonido</option>
+                </select>
+            </fieldset><br>
+
+            <!-- Tratamiento -->
+            <label for="tratamiento">Tratamiento:</label><br>
+            <input type="text" id="tratamiento" name="tratamiento"><br><br>
+
+            <!-- Expectativas -->
+            <fieldset>
+                <legend>Expectativas:</legend>
+                <input type="radio" id="negativas" name="expectativas" value="negativas">
+                <label for="negativas">Negativas</label><br>
+
+                <input type="radio" id="indefinidas" name="expectativas" value="indefinidas">
+                <label for="indefinidas">Sin definir</label><br>
+
+                <input type="radio" id="positivas" name="expectativas" value="positivas">
+                <label for="positivas">Positivas</label><br>
+            </fieldset><br>
+
+            <!-- Botón -->
+            <button type="submit">Buscar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Enciclopedia Médica | Universidad de Alicante</p>
+    </footer>
+</body>
+
+</html>
