@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enciclopedia Médica | Formulario</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="img/logoUA.png" alt="Universidad de Alicante - Logo">
+        </a>
+        <!-- Menú de navegación principal -->
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="/formularios/buscador/buscador.html">Buscador</a> |
+            <a href="/medicamentos/medicamentos.html">Medicamentos</a> |
+            <a href="/formularios/contacto/contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Formulario con Controles HTML5</h1>
+
+        <form action="#" method="post">
+            <label for="usuario">Nombre de usuario:</label><br>
+            <input type="text" id="usuario" name="usuario" pattern="[A-Za-z0-9]{4,12}" placeholder="Ej: Roxsel123"
+                required><br><br>
+
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required><br><br>
+
+            <label for="color">Selecciona un color:</label><br>
+            <input type="color" id="color" name="color" required><br><br>
+
+            <label for="fecha">Selecciona una fecha:</label><br>
+            <input type="date" id="fecha" name="fecha" min="2025-10-01" max="2026-12-31" required><br><br>
+
+            <label for="edad">Edad:</label><br>
+            <input type="number" id="edad" name="edad" placeholder="Ej: 25" min="0" max="120" step="1" required><br><br>
+
+            <label for="nivel">Nivel de satisfacción (0 a 100):</label><br>
+            <input type="range" id="nivel" name="nivel" min="0" max="100" step="5" value="50"><br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Enciclopedia Médica | Universidad de Alicante</p>
+    </footer>
+</body>
+
+</html>
