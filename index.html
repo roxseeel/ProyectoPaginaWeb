@@ -8,12 +8,11 @@
 </head>
 
 <body>
-    <header>
+    <header role="banner">
         <a href="/index.html">
-            <img src="/img/logoUA.png" alt="Universidad de Alicante - Logo">
+            <img src="/img/logoUA.png" alt="Universidad de Alicante - Logo" width="200" height="60">
         </a>
-        <!-- Menú de navegación principal -->
-        <nav>
+        <nav role="navigation" aria-label="Menú principal">
             <a href="/index.html">Inicio</a> |
             <a href="/formularios/buscador/buscador.html">Buscador</a> |
             <a href="/medicamentos/medicamentos.html">Medicamentos</a> |
@@ -22,30 +21,31 @@
         </nav>
     </header>
 
-    <main>
+    <main id="maincontent" role="main">
         <section>
             <h1>Enciclopedia médica</h1>
             <p>Esto es una enciclopedia médica.</p>
         </section>
+
         <section>
-            <h2>Índice alfabetico de temas:</h2>
-            <nav>
+            <h2>Índice alfabético de temas</h2>
+            <nav role="navigation" aria-label="Índice alfabético de artículos">
                 <ul>
                     <li><a href="indices/a.html">A</a></li>
                     <li><a href="indices/b.html">B</a></li>
                     <li><a href="indices/c.html">C</a></li>
                     <li><a href="indices/d.html">D</a></li>
-                    <li><a href="error404.html">E</a></li>
+                    <li><a href="indices/e.html">E</a></li>
                     <li><a href="error404.html">F</a></li>
                     <li><a href="error404.html">G</a></li>
-                    <li><a href="error404.html">H</a></li>
+                    <li><a href="indices/h.html">H</a></li>
                     <li><a href="error404.html">I</a></li>
                     <li><a href="error404.html">J</a></li>
                     <li><a href="error404.html">K</a></li>
                     <li><a href="error404.html">L</a></li>
                     <li><a href="error404.html">M</a></li>
-                    <li><a href="error404.html">N</a></li>
-                    <li><a href="error404.html">O</a></li>
+                    <li><a href="indices/n.html">N</a></li>
+                    <li><a href="indices/o.html">O</a></li>
                     <li><a href="error404.html">P</a></li>
                     <li><a href="error404.html">Q</a></li>
                     <li><a href="error404.html">R</a></li>
@@ -60,30 +60,35 @@
                 </ul>
             </nav>
         </section>
+
+        <section>
+            <h2>Temas destacados</h2>
+            <article>
+                <h3>Anemia</h3>
+                <p>La anemia es una disminución de glóbulos rojos...</p>
+                <a href="articulos/A/anemia.html">Leer más sobre la anemia</a>
+            </article>
+
+            <article>
+                <h3>Bronquitis</h3>
+                <p>La bronquitis es una inflamación del revestimiento de los bronquios...</p>
+                <a href="articulos/B/bronquitis.html">Leer más sobre la bronquitis</a>
+            </article>
+        </section>
+
+        <aside>
+            <h2>¿Le ayudó esta página?</h2>
+            <button>Si</button>
+            <button>No</button>
+        </aside>
     </main>
-    <section>
-        <h2>Temas destacados</h2>
-        <article>
-            <h3>Anemia</h3>
-            <p>La anemia es una disminución de glóbulos rojos...</p>
-            <a href="articulos/A/anemia.html">Leer más sobre la anemia</a>
-        </article>
 
-        <article>
-            <h3>Bronquitis</h3>
-            <p>La bronquitis es una inflamación del revestimiento de los bronquios...</p>
-            <a href="articulos/B/bronquitis.html">Leer más sobre la bronquitis</a>
-        </article>
-    </section>
-
-    <aside>
-        <h2>¿Le ayudó esta página?</h2>
-        <button>Si</button>
-        <button>No</button>
-    </aside>
-
-    <footer>
+    <footer role="contentinfo">
         <p>&copy; 2025 Enciclopedia Médica | Universidad de Alicante</p>
+        <p>
+            <a href="/wcag/accesibilidad.html">Declaración de accesibilidad</a> |
+            <a href="/wcag/politicaPrivacidad.html">Política de privacidad</a>
+        </p>
     </footer>
 </body>
 

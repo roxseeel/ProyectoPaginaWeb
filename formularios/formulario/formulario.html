@@ -27,24 +27,47 @@
         <h2>Formulario con Controles HTML5</h2>
 
         <form action="respuestaFormulario.html" method="get">
-            <label for="usuario">Nombre de usuario:</label><br>
-            <input type="text" id="usuario" name="usuario" pattern="[A-Za-z0-9]{4,12}" placeholder="Ej: Roxsel123"
-                required><br><br>
+            <fieldset>
+                <legend>Información del usuario</legend>
+                <label for="usuario">Nombre de usuario:</label><br>
+                <input type="text" id="usuario" name="usuario" pattern="[A-Za-z0-9]{4,12}" placeholder="Ej: Roxsel123"
+                    required aria-describedby="usuarioHelp"><br>
+                <small id="usuarioHelp">Entre 4 y 12 caracteres, solo letras y números.</small><br><br>
 
-            <label for="correo">Correo electrónico:</label><br>
-            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required><br><br>
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required
+                    aria-describedby="correoHelp"><br>
+                <small id="correoHelp">Ingrese un correo válido, por ejemplo: usuario@email.com</small><br><br>
 
-            <label for="color">Selecciona un color:</label><br>
-            <input type="color" id="color" name="color" required><br><br>
+                <label for="fecha">Selecciona una fecha:</label><br>
+                <input type="date" id="fecha" name="fecha" min="2025-10-01" max="2026-12-31" required><br><br>
 
-            <label for="fecha">Selecciona una fecha:</label><br>
-            <input type="date" id="fecha" name="fecha" min="2025-10-01" max="2026-12-31" required><br><br>
+                <label for="edad">Edad:</label><br>
+                <input type="number" id="edad" name="edad" placeholder="Ej: 25" min="0" max="120" step="1"
+                    required><br><br>
 
-            <label for="edad">Edad:</label><br>
-            <input type="number" id="edad" name="edad" placeholder="Ej: 25" min="0" max="120" step="1" required><br><br>
+                <label for="sexo">Sexo:</label><br>
+                <input type="radio" id="hombre" name="sexo" value="hombre">
+                <label for="hombre">Hombre</label><br>
+                <input type="radio" id="mujer" name="sexo" value="mujer">
+                <label for="mujer">Mujer</label><br>
+                <input type="radio" id="otro" name="sexo" value="otro">
+                <label for="otro">Otro</label><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Preferencias y opciones</legend>
+                <label for="color">Selecciona un color:</label><br>
+                <input type="color" id="color" name="color" required><br><br>
 
-            <label for="nivel">Nivel de satisfacción (0 a 100):</label><br>
-            <input type="range" id="nivel" name="nivel" min="0" max="100" step="5" value="50"><br><br>
+                <label for="nivel">Nivel de satisfacción (0 a 100):</label><br>
+                <input type="range" id="nivel" name="nivel" min="0" max="100" step="5" value="50"
+                    aria-describedby="nivelHelp"><br>
+                <small id="nivelHelp">Seleccione su nivel de satisfacción de 0 a 100.</small><br><br>
+
+                <input type="checkbox" id="info" name="info">
+                <label for="info">Deseo recibir más información</label><br><br>
+
+            </fieldset>
 
             <input type="submit" value="Enviar">
             <input type="reset" value="Restablecer">
@@ -53,6 +76,10 @@
 
     <footer>
         <p>&copy; 2025 Enciclopedia Médica | Universidad de Alicante</p>
+        <p>
+            <a href="/wcag/accesibilidad.html">Declaración de accesibilidad</a> |
+            <a href="/wcag/politicaPrivacidad.html">Política de privacidad</a>
+        </p>
     </footer>
 </body>
 

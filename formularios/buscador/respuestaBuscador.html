@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Respuesta Buscador | Enciclopedia médica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respuesta Buscador | Enciclopedia Médica</title>
 </head>
 
 <body>
@@ -23,12 +24,20 @@
 
     <main>
         <h2>Resultados de búsqueda</h2>
-        <p>La búsqueda no ha producido resultados para el criterio de búsqueda empleado, pruebe a realizar otra
-            búsqueda.</p>
+        <section aria-labelledby="no-results">
+            <h3 id="no-results">Sin resultados</h3>
+            <p>La búsqueda no ha producido resultados para los criterios introducidos. Intente con otros términos o
+                revise la ortografía.</p>
+            <p><a href="/formularios/buscador/buscador.html">Volver al buscador</a></p>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Enciclopedia Médica | Universidad de Alicante</p>
+        <p>
+            <a href="/wcag/accesibilidad.html">Declaración de accesibilidad</a> |
+            <a href="/wcag/politicaPrivacidad.html">Política de privacidad</a>
+        </p>
     </footer>
 </body>
 

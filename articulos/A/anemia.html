@@ -2,104 +2,227 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Anemia | Enciclopedia médica</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Anemia | Enciclopedia Médica — Universidad de Alicante</title>
+    <meta name="description"
+        content="Artículo: Anemia — causas, síntomas, pruebas y tratamiento. Información accesible y recursos." />
 </head>
 
 <body>
-    <header>
-        <a href="/index.html">
-            <img src="/img/logoUA.png" alt="Universidad de Alicante - Logo">
-        </a>
-        <nav>
-            <a href="/index.html">Inicio</a> |
-            <a href="/formularios/buscador/buscador.html">Buscador</a> |
-            <a href="/medicamentos/medicamentos.html">Medicamentos</a> |
-            <a href="/formularios/formulario/formulario.html">Formulario</a> |
-            <a href="/formularios/contacto/contacto.html">Contacto</a>
-        </nav>
+    <a class="skip-link" href="#maincontent">Saltar al contenido principal</a>
 
+    <header role="banner" aria-labelledby="site-title">
+        <h1 id="site-title" class="visually-hidden">Enciclopedia Médica — Universidad de Alicante</h1>
+        <a href="/index.html" aria-label="Página principal — Universidad de Alicante">
+            <img src="/img/logoUA.png" alt="Universidad de Alicante — logotipo" width="200" height="60">
+        </a>
+        <nav role="navigation" aria-label="Navegación principal">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/formularios/buscador/buscador.html">Buscador</a></li>
+                <li><a href="/medicamentos/medicamentos.html">Medicamentos</a></li>
+                <li><a href="/formularios/formulario/formulario.html">Formulario</a></li>
+                <li><a href="/formularios/contacto/contacto.html">Contacto</a></li>
+                <li><a href="/wcag/accesibilidad.html">Declaración de accesibilidad</a></li>
+                <li><a href="/wcag/politicaPrivacidad.html">Política de privacidad</a></li>
+                <li><a href="/wcag/mapa.html">Mapa del sitio</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <article>
-            <h1>Anemia</h1>
-            <section>
-                <h2>Descripción</h2>
-                <p>La anemia es un problema que se produce cuando no tienes suficientes glóbulos rojos sanos o
-                    hemoglobina para transportar oxígeno a los tejidos del cuerpo.</p>
+    <nav class="breadcrumb" aria-label="Migas de pan">
+        <ol>
+            <li><a href="/index.html">Inicio</a> &rsaquo;</li>
+            <li><a href="/wcag/medicina.html">Medicina</a> &rsaquo;</li>
+            <li aria-current="page">Anemia</li>
+        </ol>
+    </nav>
+
+    <main id="maincontent" role="main">
+        <article aria-labelledby="article-title">
+            <header>
+                <h2 id="article-title">Anemia</h2>
+                <p class="visually-hidden">Artículo con propósito informativo. Contiene descripción, causas, síntomas,
+                    pruebas, tratamiento y recursos.</p>
+            </header>
+
+
+            <nav class="toc" aria-labelledby="toc-title">
+                <h3 id="toc-title">Tabla de contenidos</h3>
+                <ol>
+                    <li><a href="#descripcion">Descripción</a></li>
+                    <li><a href="#causas">Causas</a></li>
+                    <li><a href="#sintomas">Síntomas</a></li>
+                    <li><a href="#pruebas">Pruebas y exámenes</a></li>
+                    <li><a href="#tratamiento">Tratamiento</a></li>
+                    <li><a href="#expectativas">Expectativas</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#imagen-anemia">Ilustración y descripción larga</a></li>
+                    <li><a href="#video">Vídeo relacionado</a></li>
+                </ol>
+            </nav>
+
+            <section id="descripcion" aria-labelledby="desc-h">
+                <h3 id="desc-h">Descripción</h3>
+                <p>La <strong>anemia</strong> es un trastorno que se produce cuando no hay suficientes glóbulos rojos
+                    sanos o hemoglobina para transportar oxígeno a los tejidos del cuerpo.</p>
             </section>
 
-            <section>
-                <h2>Causas</h2>
+            <section id="causas" aria-labelledby="causas-h">
+                <h3 id="causas-h">Causas</h3>
                 <ul>
-                    <li>Déficit de hierro</li>
-                    <li>Pérdida de vitaminas</li>
-                    <li>Enfermedades crónicas</li>
+                    <li>Déficit de <abbr title="hierro">Fe</abbr> (hierro).</li>
+                    <li>Pérdida de vitaminas (por ejemplo, <abbr title="ácido fólico">AF</abbr>, <abbr
+                            title="vitamina B12">B12</abbr>).</li>
+                    <li>Enfermedades crónicas que afectan la producción de glóbulos rojos.</li>
                 </ul>
             </section>
 
-            <section>
-                <h2>Síntomas</h2>
+            <section id="sintomas" aria-labelledby="sintomas-h">
+                <h3 id="sintomas-h">Síntomas</h3>
                 <ul>
-                    <li>Cansancio</li>
+                    <li>Cansancio y debilidad</li>
                     <li>Piel pálida</li>
-                    <li>Mareos</li>
+                    <li>Mareos o sensación de desmayo</li>
                 </ul>
             </section>
 
-            <section>
-                <h2>Pruebas y exámenes</h2>
-                <p>Análisis de sangre: hemograma completo.</p>
+            <section id="pruebas" aria-labelledby="pruebas-h">
+                <h3 id="pruebas-h">Pruebas y exámenes</h3>
+                <p>Análisis de sangre: <strong>hemograma completo</strong>. En función de los resultados pueden
+                    solicitarse ferritina, transferrina, vitamina B12 y ácido fólico.</p>
             </section>
 
-            <section>
-                <h2>Tratamiento</h2>
-                <p>Suplementos de hierro, dieta balanceada, transfusiones en casos graves.</p>
+            <section id="tratamiento" aria-labelledby="tratamiento-h">
+                <h3 id="tratamiento-h">Tratamiento</h3>
+                <p>Dependiendo de la causa: suplementos de hierro, suplementación de vitaminas, corrección de pérdidas
+                    hemorrágicas y, en casos graves, transfusiones de sangre. El tratamiento siempre debe estar
+                    supervisado por un profesional sanitario.</p>
             </section>
 
-            <section>
-                <h2>Expectativas</h2>
-                <p>Generalmente buena con tratamiento adecuado.</p>
+            <section id="expectativas" aria-labelledby="expectativas-h">
+                <h3 id="expectativas-h">Expectativas</h3>
+                <p>Con un diagnóstico y tratamiento adecuados, el pronóstico suele ser bueno. El tiempo de recuperación
+                    depende de la causa subyacente.</p>
             </section>
 
-            <section>
-                <h2>
-                    <a href="https://www.mayoclinic.org/es/diseases-conditions/anemia/symptoms-causes/syc-20351360"
-                        target="_blank">Más
-                        sobre el artículo</a>
-                </h2>
+            <section id="recursos" aria-labelledby="recursos-h">
+                <h3 id="recursos-h">Recursos y lectura adicional</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.mayoclinic.org/es/diseases-conditions/anemia/symptoms-causes/syc-20351360"
+                            target="_blank" rel="noopener noreferrer">
+                            Información sobre anemia en Mayo Clinic (artículo informativo).
+                        </a>
+                    </li>
+
+                </ul>
             </section>
-            <!-- Image Map Generated by http://www.image-map.net/ -->
-            <figure>
-                <img src="/img/anemia.jpg" alt="Ilustración de anemia" usemap="#image-map">
+
+
+            <section id="imagen-anemia" aria-labelledby="imagen-h">
+                <h3 id="imagen-h">Ilustración de anemia</h3>
+
+
+                <figure>
+                    <img src="/img/anemia.jpg"
+                        alt="Ilustración comparativa: sangre con cantidad normal y cantidad reducida de glóbulos rojos"
+                        usemap="#image-map" width="900" height="450" aria-describedby="anemia-desc" />
+                    <figcaption>Comparación entre sangre con recuento normal de glóbulos rojos y sangre con anemia.
+                    </figcaption>
+                </figure>
+
+
+                <div id="anemia-desc">
+                    <h4>Descripción larga de la ilustración</h4>
+                    <p>La imagen muestra dos paneles: a la izquierda, una vista ampliada de un
+                        recuento normal de glóbulos rojos, con una densidad alta de células de color rojo
+                        y espacios microscópicos entre ellas. A la derecha, un panel similar con una cantidad
+                        notablemente menor de glóbulos rojos y más espacios vacíos, que ilustra la reducción
+                        de células característica de la anemia. Debajo de cada panel hay etiquetas que explican
+                        las diferencias y un resumen de posibles causas (déficit de hierro, pérdidas sanguíneas,
+                        problemas
+                        en la producción de hematíes).</p>
+                </div>
+
 
                 <map name="image-map">
-                    <area target="_blank" alt="Cantidad normal de glóbulos rojas"
-                        title="Cantidad normal de glóbulos rojas" href="https://www.ua.es/" coords="42,158,364,482"
-                        shape="rect">
-                    <area target="_blank" alt="Cantidad anémica de glóbulos rojas"
-                        title="Cantidad anémica de glóbulos rojas" href="https://www.ua.es/" coords="517,155,841,481"
-                        shape="rect">
+                    <area alt="Cantidad normal de glóbulos rojos" title="Cantidad normal de glóbulos rojos"
+                        href="https://www.ua.es/" coords="42,158,364,482" shape="rect">
+                    <area alt="Cantidad anémica de glóbulos rojos" title="Cantidad anémica de glóbulos rojos"
+                        href="https://www.ua.es/" coords="517,155,841,481" shape="rect">
                 </map>
-            </figure>
+            </section>
 
-            <h2>Video relacionado</h2>
-            <iframe width="500" height="300" src="https://www.youtube.com/embed/tLlWSwcSfU4"
-                title="¿Qué es la anemia y por qué es una amenaza silenciosa? - #ExclusivoMSP"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <section id="video" aria-labelledby="video-h">
+                <h3 id="video-h">Vídeo relacionado</h3>
+                <p>Vídeo informativo sobre la anemia publicado por el Ministerio de Salud (o canal correspondiente).</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tLlWSwcSfU4"
+                    title="¿Qué es la anemia y por qué es una amenaza silenciosa? - #ExclusivoMSP"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+                <p>Si el usuario necesita subtítulos o transcripción, recomendamos activar los subtítulos en el
+                    reproductor o consultar la transcripción del vídeo.</p>
+            </section>
+
+
+            <section aria-labelledby="feedback-h">
+                <h3 id="feedback-h">¿Le ayudó esta página?</h3>
+                <form action="/formularios/feedback.html" method="get" aria-describedby="feedback-desc">
+                    <p id="feedback-desc">Seleccione una opción y envíe su valoración. Los campos marcados con * son
+                        obligatorios.</p>
+                    <fieldset>
+                        <legend>Valoración de la página</legend>
+                        <p>
+                            <input type="radio" id="val-si" name="valoracion" value="si" required>
+                            <label for="val-si">Sí</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="val-no" name="valoracion" value="no">
+                            <label for="val-no">No</label>
+                        </p>
+                    </fieldset>
+
+                    <p>
+                        <label for="comentarios">Comentarios (opcional)</label><br>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="40"
+                            placeholder="Escribe aquí tus comentarios..."></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Enviar valoración</button>
+                        <button type="reset">Restablecer</button>
+                    </p>
+                </form>
+            </section>
+
+
+            <nav aria-label="Enlaces relacionados">
+                <ul>
+                    <li><a href="/wcag/mapa.html">Mapa del sitio (índice)</a></li>
+                </ul>
+            </nav>
+
         </article>
     </main>
 
-    <aside>
-        <h2>¿Le ayudó esta página?</h2>
-        <button>Si</button>
-        <button>No</button>
+    <aside role="complementary" aria-labelledby="aside-title">
+        <h3 id="aside-title">Enlaces rápidos</h3>
+        <ul>
+            <li><a href="/articulos/H/hematologia.html">Hematología</a></li>
+            <li><a href="/articulos/D/deficienciasNutricionales.html">Deficiencias nutricionales</a></li>
+        </ul>
     </aside>
 
-    <footer>
+    <footer role="contentinfo">
         <p>&copy; 2025 Enciclopedia Médica | Universidad de Alicante</p>
+        <p>
+            <a href="/wcag/accesibilidad.html">Declaración de accesibilidad</a> |
+            <a href="/wcag/politicaPrivacidad.html">Política de privacidad</a>
+        </p>
     </footer>
 </body>
 
