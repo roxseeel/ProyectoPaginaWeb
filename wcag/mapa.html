@@ -5,62 +5,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa | Enciclopedia Médica</title>
+    <meta name="description"
+        content="Mapa del sitio de la Enciclopedia Médica de la Universidad de Alicante, con enlaces a todas las secciones y artículos médicos disponibles.">
+    <link rel="stylesheet" href="/CSS/estilo.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
 <body>
-    <a href="/index.html">
-        <img src="/img/logoUA.png" alt="Universidad de Alicante - Logo">
-    </a>
     <a class="skip-link" href="#maincontent">Saltar al contenido principal</a>
 
-    <header role="banner">
-        <a href="/index.html">Volver al inicio</a>
-        <h1>Mapa del sitio</h1>
+    <header>
+        <a href="/index.html">
+            <img src="/img/logoUA.png" alt="Universidad de Alicante - Logo" width="200" height="60">
+        </a>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="/index.html"><i class="bi bi-house-door"></i> Inicio</a></li>
+                <li><a href="/formularios/buscador/buscador.html"><i class="bi bi-search"></i> Buscador</a></li>
+                <li><a href="/medicamentos/medicamentos.html"><i class="bi bi-heart-pulse"></i> Medicamentos</a></li>
+                <li><a href="/formularios/formulario/formulario.html"><i class="bi bi-card-checklist"></i>
+                        Formulario</a></li>
+                <li><a href="/formularios/contacto/contacto.html"><i class="bi bi-envelope"></i> Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main id="maincontent" role="main">
-        <p>Enlaces a las secciones y artículos de la Enciclopedia Médica de la Universidad de Alicante.</p>
+    <main id="maincontent" style="padding: 2rem;">
+        <h1><i class="bi bi-map"></i> Mapa del sitio</h1>
+        <p>Encuentre enlaces directos a todas las secciones y artículos de la Enciclopedia Médica de la Universidad de
+            Alicante.</p>
 
-        <nav aria-labelledby="secciones-h">
-            <h2 id="secciones-h">Secciones principales</h2>
+        <section aria-label="Secciones principales">
+            <h2><i class="bi bi-columns-gap"></i> Secciones principales</h2>
             <ul>
                 <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/wcag/medicina.html">Medicina</a></li>
-                <li><a href="/medicamentos/medicamentos.html">Medicamentos</a></li>
                 <li><a href="/formularios/buscador/buscador.html">Buscador</a></li>
+                <li><a href="/medicamentos/medicamentos.html">Medicamentos</a></li>
                 <li><a href="/formularios/formulario/formulario.html">Formulario</a></li>
                 <li><a href="/formularios/contacto/contacto.html">Contacto</a></li>
-                <li><a href="/formularios/feedback.html">Feedback</a></li>
                 <li><a href="/wcag/accesibilidad.html">Declaración de accesibilidad</a></li>
                 <li><a href="/wcag/politicaPrivacidad.html">Política de privacidad</a></li>
             </ul>
-        </nav>
+        </section>
 
-        <nav aria-labelledby="articulos-h">
-            <h2 id="articulos-h">Artículos por especialidad</h2>
+        <section aria-label="Artículos por orden alfabético" style="margin-top: 2rem;">
+            <h2><i class="bi bi-journal-text"></i> Artículos por orden alfabético</h2>
             <ul>
-                <li><a href="/articulos/A/anemia.html">Anemia</a></li>
-                <li><a href="/articulos/B/bronquitis.html">Bronquitis</a></li>
-                <li><a href="/articulos/C/conjuntivitis.html">Conjuntivitis</a></li>
-                <li><a href="/articulos/D/diabetes.html">Diabetes</a></li>
-                <li><a href="/articulos/H/hematologia.html">Hematología</a></li>
-                <li><a href="/articulos/D/deficienciasNutricionales.html">Deficiencias nutricionales</a></li>
-                <li><a href="/articulos/N/neumologia.html">Neumología</a></li>
-                <li><a href="/articulos/O/oftalmologia.html">Oftalmología</a></li>
-                <li><a href="/articulos/E/enfermedadesRespiratorias.html">Enfermedades respiratorias</a></li>
-                <li><a href="/articulos/E/enfermedadesOculares.html">Enfermedades oculares</a></li>
-                <li><a href="/articulos/E/endocrinologia.html">Endocrinología</a></li>
-                <li><a href="/articulos/E/enfermedadesMetabolicas.html">Enfermedades metabólicas</a></li>
-                <li><a href="/medicamentos/medicamentos.html">Medicamentos</a></li>
+                <li>
+                    <a href="/indices/a.html">A</a>
+                    <ul>
+                        <li>
+                            <a href="/articulos/A/anemia.html">Anemia</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/indices/b.html">B</a>
+                    <ul>
+                        <li>
+                            <a href="/articulos/B/bronquitis.html">Bronquitis</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/indices/c.html">C</a>
+                    <ul>
+                        <li>
+                            <a href="/articulos/C/conjuntivitis.html">Conjuntivitis</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/indices/d.html">D</a>
+                    <ul>
+                        <li>
+                            <a href="/articulos/D/deficienciasNutricionales.html">Deficiencias nutricionales</a>
+                        </li>
+                        <li>
+                            <a href="/articulos/D/diabetes.html">Diabetes</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/indices/e.html">E</a>
+                    <ul>
+                        <li>
+                            <a href="/articulos/E/endocrinologia.html">Endocrinología</a>
+                        </li>
+                        <li>
+                            <a href="/articulos/E/enfermedadesMetabolicas.html">Enfermedades metabolicas</a>
+                        </li>
+                        <li>
+                            <a href="/articulos/E/enfermedadesOculares.html">Enfermedades oculares</a>
+                        </li>
+                        <li>
+                            <a href="/articulos/E/enfermedadesRespiratorias.html">Enfermedades respiratorias</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="error404.html">F</a></li>
+                <li><a href="error404.html">G</a></li>
+                <li><a href="/indices/h.html">H</a>
+                    <ul>
+                        <li>
+                            <a href="/articulos/H/hematologia.html">Hematología</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="error404.html">I</a></li>
+                <li><a href="error404.html">J</a></li>
+                <li><a href="error404.html">K</a></li>
+                <li><a href="error404.html">L</a></li>
+                <li><a href="error404.html">M</a></li>
+                <li><a href="/indices/n.html">N</a>
+                    <ul>
+                        <li>
+                            <a href="/articulos/N/neumologia.html">Neumología</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/indices/o.html">O</a>
+                    <ul>
+                        <li>
+                            <a href="/articulos/O/oftalmologia.html">Oftalmología</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="error404.html">P</a></li>
+                <li><a href="error404.html">Q</a></li>
+                <li><a href="error404.html">R</a></li>
+                <li><a href="error404.html">S</a></li>
+                <li><a href="error404.html">T</a></li>
+                <li><a href="error404.html">U</a></li>
+                <li><a href="error404.html">V</a></li>
+                <li><a href="error404.html">W</a></li>
+                <li><a href="error404.html">X</a></li>
+                <li><a href="error404.html">Y</a></li>
+                <li><a href="error404.html">Z</a></li>
             </ul>
-        </nav>
+        </section>
     </main>
 
-    <footer role="contentinfo">
+    <footer>
         <p>&copy; 2025 Enciclopedia Médica | Universidad de Alicante</p>
         <p>
-            <a href="/wcag/accesibilidad.html">Declaración de accesibilidad</a> |
-            <a href="/wcag/politicaPrivacidad.html">Política de privacidad</a>
+            <a href="/wcag/accesibilidad.html"><i class="bi bi-universal-access"></i> Declaración de accesibilidad</a> |
+            <a href="/wcag/politicaPrivacidad.html"><i class="bi bi-shield-lock-fill"></i> Política de privacidad</a> |
+            <a href="/wcag/mapa.html"><i class="bi bi-map-fill"></i> Mapa del sitio</a>
         </p>
     </footer>
 </body>

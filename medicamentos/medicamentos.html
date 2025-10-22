@@ -5,31 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medicamentos | Enciclopedia médica</title>
+    <link rel="stylesheet" href="/CSS/estilo.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#maincontent">Saltar al contenido principal</a>
+
     <header>
         <a href="/index.html">
-            <img src="/img/logoUA.png" alt="Universidad de Alicante - Logo">
+            <img src="/img/logoUA.png" alt="Universidad de Alicante - Logo" width="200" height="60">
         </a>
-        <h1>Medicamentos</h1>
-        <nav>
-            <a href="/index.html">Inicio</a> |
-            <a href="/formularios/buscador/buscador.html">Buscador</a> |
-            <a href="/medicamentos/medicamentos.html">Medicamentos</a> |
-            <a href="/formularios/formulario/formulario.html">Formulario</a> |
-            <a href="/formularios/contacto/contacto.html">Contacto</a>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="/index.html"><i class="bi bi-house-door"></i> Inicio</a></li>
+                <li><a href="/formularios/buscador/buscador.html"><i class="bi bi-search"></i> Buscador</a></li>
+                <li><a href="/medicamentos/medicamentos.html"><i class="bi bi-heart-pulse"></i> Medicamentos</a></li>
+                <li><a href="/formularios/formulario/formulario.html"><i class="bi bi-card-checklist"></i>
+                        Formulario</a></li>
+                <li><a href="/formularios/contacto/contacto.html"><i class="bi bi-envelope"></i> Contacto</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="maincontent">
+        <h1><i class="bi bi-capsule"></i> Medicamentos</h1>
         <h2>Tipos de medicamentos</h2>
+
         <section>
-            <h3>Analgesicos</h3>
-            <p>Los analgésicos son medicamentos que alivian o reducen el dolor, como los dolores de cabeza, musculares o
-                de la artritis, sin causar pérdida de conciencia. Actúan inhibiendo la producción de sustancias como la
-                prostaglandina, que causa dolor y fiebre, o actuando directamente sobre el sistema nervioso para
-                bloquear las señales de dolor. </p>
+            <h3><i class="bi bi-activity"></i> Analgésicos</h3>
+            <p>Los analgésicos son medicamentos que alivian o reducen el dolor...</p>
             <table>
                 <caption>Analgésicos más comunes</caption>
 
@@ -103,10 +109,8 @@
         </section>
 
         <section>
-            <h3>Antiinflamatorios</h3>
-            <p>Los antiinflamatorios son medicamentos que reducen la inflamación, caracterizada por enrojecimiento,
-                hinchazón, calor y dolor, en el cuerpo. Actúan impidiendo la producción de sustancias que causan esta
-                respuesta del cuerpo ante lesiones o infecciones.</p>
+            <h3><i class="bi bi-heart-pulse-fill"></i> Antiinflamatorios</h3>
+            <p>Los antiinflamatorios son medicamentos que reducen la inflamación...</p>
             <table>
                 <caption>Antiinflamatorios más comunes</caption>
 
@@ -180,11 +184,12 @@
         </section>
     </main>
 
-    <footer role="contentinfo">
+    <footer>
         <p>&copy; 2025 Enciclopedia Médica | Universidad de Alicante</p>
         <p>
-            <a href="/wcag/accesibilidad.html">Declaración de accesibilidad</a> |
-            <a href="/wcag/politicaPrivacidad.html">Política de privacidad</a>
+            <a href="/wcag/accesibilidad.html"><i class="bi bi-universal-access"></i> Declaración de accesibilidad</a> |
+            <a href="/wcag/politicaPrivacidad.html"><i class="bi bi-shield-lock"></i> Política de privacidad</a> |
+            <a href="/wcag/mapa.html"><i class="bi bi-map"></i> Mapa del sitio</a>
         </p>
     </footer>
 </body>

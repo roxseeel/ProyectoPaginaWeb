@@ -5,23 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Declaración de accesibilidad | Enciclopedia Médica</title>
+    <meta name="description"
+        content="Declaración de accesibilidad de la Enciclopedia Médica de la Universidad de Alicante, conforme a las pautas WCAG 2.1 nivel AA.">
+    <link rel="stylesheet" href="/CSS/estilo.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
 <body>
-    <a href="/index.html">
-        <img src="/img/logoUA.png" alt="Universidad de Alicante - Logo">
-    </a>
-
     <a class="skip-link" href="#maincontent">Saltar al contenido principal</a>
-
-    <header role="banner">
-        <a href="/index.html">Volver al inicio</a>
-        <h1>Declaración de accesibilidad</h1>
+    <header>
+        <a href="/index.html">
+            <img src="/img/logoUA.png" alt="Universidad de Alicante - Logo" width="200" height="60">
+        </a>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="/index.html"><i class="bi bi-house-door"></i> Inicio</a></li>
+                <li><a href="/formularios/buscador/buscador.html"><i class="bi bi-search"></i> Buscador</a></li>
+                <li><a href="/medicamentos/medicamentos.html"><i class="bi bi-heart-pulse"></i> Medicamentos</a></li>
+                <li><a href="/formularios/formulario/formulario.html"><i class="bi bi-card-checklist"></i>
+                        Formulario</a></li>
+                <li><a href="/formularios/contacto/contacto.html"><i class="bi bi-envelope"></i> Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main id="maincontent" role="main">
+    <main id="maincontent">
+        <h1><i class="bi bi-universal-access"></i> Declaración de accesibilidad</h1>
+
         <section aria-labelledby="intro-h">
-            <h2 id="intro-h">Compromiso con la accesibilidad</h2>
+            <h2 id="intro-h"><i class="bi bi-shield-check"></i> Compromiso con la accesibilidad</h2>
             <p>Esta página cumple con los criterios de accesibilidad según las pautas <strong>WCAG 2.1 nivel
                     AA</strong>.</p>
             <p>Todos los enlaces, formularios e imágenes incluyen atributos necesarios para mejorar la accesibilidad y
@@ -29,28 +42,31 @@
         </section>
 
         <section aria-labelledby="detalles-h">
-            <h2 id="detalles-h">Detalles de accesibilidad</h2>
+            <h2 id="detalles-h"><i class="bi bi-list-check"></i> Detalles de accesibilidad</h2>
             <ul>
-                <li>Texto alternativo en todas las imágenes.</li>
-                <li>Formularios accesibles con etiquetas y descripciones claras.</li>
-                <li>Navegación mediante teclado y atajos.</li>
-                <li>Contraste suficiente entre texto y fondo.</li>
-                <li>Uso de títulos y encabezados semánticos para estructurar la información.</li>
+                <li><i class="bi bi-image-fill"></i> Texto alternativo en todas las imágenes.</li>
+                <li><i class="bi bi-ui-checks-grid"></i> Formularios accesibles con etiquetas y descripciones claras.
+                </li>
+                <li><i class="bi bi-keyboard-fill"></i> Navegación mediante teclado y atajos.</li>
+                <li><i class="bi bi-eyedropper"></i> Contraste suficiente entre texto y fondo.</li>
+                <li><i class="bi bi-layout-text-sidebar-reverse"></i> Uso de títulos y encabezados semánticos para
+                    estructurar la información.</li>
             </ul>
         </section>
 
         <section aria-labelledby="contacto-h">
-            <h2 id="contacto-h">Contacto para sugerencias de accesibilidad</h2>
-            <p>Si encuentra algún problema de accesibilidad, por favor <a
-                    href="/formularios/contacto/contacto.html">contáctenos</a> y haremos las mejoras necesarias.</p>
+            <h2 id="contacto-h"><i class="bi bi-envelope-fill"></i> Contacto para sugerencias de accesibilidad</h2>
+            <p>Si encuentra algún problema de accesibilidad, por favor <a href="/formularios/contacto/contacto.html"><i
+                        class="bi bi-chat-dots-fill"></i> contáctenos</a> y haremos las mejoras necesarias.</p>
         </section>
     </main>
 
-    <footer role="contentinfo">
+    <footer>
         <p>&copy; 2025 Enciclopedia Médica | Universidad de Alicante</p>
         <p>
-            <a href="/wcag/accesibilidad.html">Declaración de accesibilidad</a> |
-            <a href="/wcag/politicaPrivacidad.html">Política de privacidad</a>
+            <a href="/wcag/accesibilidad.html"><i class="bi bi-universal-access"></i> Declaración de accesibilidad</a> |
+            <a href="/wcag/politicaPrivacidad.html"><i class="bi bi-shield-lock"></i> Política de privacidad</a> |
+            <a href="/wcag/mapa.html"><i class="bi bi-map"></i> Mapa del sitio</a>
         </p>
     </footer>
 </body>

@@ -5,34 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Respuesta Contacto | Enciclopedia médica</title>
+    <link rel="stylesheet" href="/CSS/estilo.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#maincontent">Saltar al contenido principal</a>
+
     <header>
         <a href="/index.html">
-            <img src="/img/logoUA.png" alt="Universidad de Alicante - Logo">
+            <img src="/img/logoUA.png" alt="Universidad de Alicante - Logo" width="200" height="60">
         </a>
-        <h1>Enciclopedia médica</h1>
-        <nav>
-            <a href="/index.html">Inicio</a> |
-            <a href="/formularios/buscador/buscador.html">Buscador</a> |
-            <a href="/medicamentos/medicamentos.html">Medicamentos</a> |
-            <a href="/formularios/formulario/formulario.html">Formulario</a> |
-            <a href="/formularios/contacto/contacto.html">Contacto</a>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="/index.html"><i class="bi bi-house-door"></i> Inicio</a></li>
+                <li><a href="/formularios/buscador/buscador.html"><i class="bi bi-search"></i> Buscador</a></li>
+                <li><a href="/medicamentos/medicamentos.html"><i class="bi bi-heart-pulse"></i> Medicamentos</a></li>
+                <li><a href="/formularios/formulario/formulario.html"><i class="bi bi-card-checklist"></i>
+                        Formulario</a></li>
+                <li><a href="/formularios/contacto/contacto.html"><i class="bi bi-envelope"></i> Contacto</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <h2>Consulta recibida</h2>
-        <p>Hemos recibido su consulta, en breve nos pondremos en contacto para proporcionarle una respuesta.</p>
-        <p><a href="/formularios/contacto/contacto.html">Volver al formulario</a></p>
+    <main id="maincontent">
+        <h1><i class="bi bi-check-circle"></i> Consulta recibida</h1>
+        <p><i class="bi bi-envelope-open"></i> Hemos recibido su consulta, en breve nos pondremos en contacto para
+            proporcionarle una respuesta.</p>
+        <p><a href="/formularios/contacto/contacto.html">
+                <i class="bi bi-arrow-left-circle"></i> Volver al formulario
+            </a></p>
+
     </main>
 
     <footer>
         <p>&copy; 2025 Enciclopedia Médica | Universidad de Alicante</p>
         <p>
-            <a href="/wcag/accesibilidad.html">Declaración de accesibilidad</a> |
-            <a href="/wcag/politicaPrivacidad.html">Política de privacidad</a>
+            <a href="/wcag/accesibilidad.html"><i class="bi bi-universal-access"></i> Declaración de accesibilidad</a> |
+            <a href="/wcag/politicaPrivacidad.html"><i class="bi bi-shield-lock"></i> Política de privacidad</a> |
+            <a href="/wcag/mapa.html"><i class="bi bi-map"></i> Mapa del sitio</a>
         </p>
     </footer>
 </body>

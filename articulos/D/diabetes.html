@@ -2,32 +2,31 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diabetes | Enciclopedia Médica — Universidad de Alicante</title>
     <meta name="description"
-        content="Artículo: Diabetes — causas, síntomas, pruebas y tratamiento. Información accesible y recursos." />
+        content="Artículo: Diabetes — causas, síntomas, pruebas y tratamiento. Información accesible y recursos.">
+    <link rel="stylesheet" href="/CSS/estilo.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
 <body>
     <a class="skip-link" href="#maincontent">Saltar al contenido principal</a>
 
-    <header role="banner" aria-labelledby="site-title">
-        <h1 id="site-title" class="visually-hidden">Enciclopedia Médica — Universidad de Alicante</h1>
-        <a href="/index.html" aria-label="Página principal — Universidad de Alicante">
-            <img src="/img/logoUA.png" alt="Universidad de Alicante — logotipo" width="200" height="60">
+    <header>
+        <a href="/index.html">
+            <img src="/img/logoUA.png" alt="Universidad de Alicante - Logo" width="200" height="60">
         </a>
-
-        <nav role="navigation" aria-label="Navegación principal">
+        <nav aria-label="Menú principal">
             <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/formularios/buscador/buscador.html">Buscador</a></li>
-                <li><a href="/medicamentos/medicamentos.html">Medicamentos</a></li>
-                <li><a href="/formularios/formulario/formulario.html">Formulario</a></li>
-                <li><a href="/formularios/contacto/contacto.html">Contacto</a></li>
-                <li><a href="/wcag/accesibilidad.html">Declaración de accesibilidad</a></li>
-                <li><a href="/wcag/politicaPrivacidad.html">Política de privacidad</a></li>
-                <li><a href="/wcag/mapa.html">Mapa del sitio</a></li>
+                <li><a href="/index.html"><i class="bi bi-house-door"></i> Inicio</a></li>
+                <li><a href="/formularios/buscador/buscador.html"><i class="bi bi-search"></i> Buscador</a></li>
+                <li><a href="/medicamentos/medicamentos.html"><i class="bi bi-heart-pulse"></i> Medicamentos</a></li>
+                <li><a href="/formularios/formulario/formulario.html"><i class="bi bi-card-checklist"></i>
+                        Formulario</a></li>
+                <li><a href="/formularios/contacto/contacto.html"><i class="bi bi-envelope"></i> Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -35,21 +34,19 @@
     <nav class="breadcrumb" aria-label="Migas de pan">
         <ol>
             <li><a href="/index.html">Inicio</a> &rsaquo;</li>
-            <li><a href="/wcag/medicina.html">Medicina</a> &rsaquo;</li>
+            <li><a href="/indices/d.html">Artículos con la letra: D</a> &rsaquo;</li>
             <li aria-current="page">Diabetes</li>
         </ol>
     </nav>
 
-    <main id="maincontent" role="main">
+    <main id="maincontent">
         <article aria-labelledby="article-title">
-            <header>
-                <h2 id="article-title">Diabetes</h2>
-                <p class="visually-hidden">Artículo con propósito informativo. Contiene descripción, causas, síntomas,
-                    pruebas, tratamiento, expectativas y recursos.</p>
-            </header>
+            <h1 id="article-title"><i class="bi bi-book-half"></i> Diabetes</h1>
+            <p class="visually-hidden">Artículo con propósito informativo. Contiene descripción, causas, síntomas,
+                pruebas, tratamiento, expectativas y recursos.</p>
 
             <nav class="toc" aria-labelledby="toc-title">
-                <h3 id="toc-title">Tabla de contenidos</h3>
+                <h2 id="toc-title">Tabla de contenidos</h2>
                 <ol>
                     <li><a href="#descripcion">Descripción</a></li>
                     <li><a href="#causas">Causas</a></li>
@@ -64,13 +61,13 @@
             </nav>
 
             <section id="descripcion" aria-labelledby="desc-h">
-                <h3 id="desc-h">Descripción</h3>
+                <h2 id="desc-h">Descripción</h2>
                 <p>La <strong>diabetes</strong> es una enfermedad crónica en la que el cuerpo no produce suficiente
                     insulina o no la utiliza adecuadamente.</p>
             </section>
 
             <section id="causas" aria-labelledby="causas-h">
-                <h3 id="causas-h">Causas</h3>
+                <h2 id="causas-h">Causas</h2>
                 <ul>
                     <li>Origen autoinmune</li>
                     <li>Factores genéticos</li>
@@ -82,7 +79,7 @@
             </section>
 
             <section id="sintomas" aria-labelledby="sintomas-h">
-                <h3 id="sintomas-h">Síntomas</h3>
+                <h2 id="sintomas-h">Síntomas</h2>
                 <ul>
                     <li>Sed excesiva</li>
                     <li>Hambre constante</li>
@@ -93,24 +90,24 @@
             </section>
 
             <section id="pruebas" aria-labelledby="pruebas-h">
-                <h3 id="pruebas-h">Pruebas y exámenes</h3>
+                <h2 id="pruebas-h">Pruebas y exámenes</h2>
                 <p>Pruebas de glucosa en sangre, examen de orina y hemoglobina glucosilada.</p>
             </section>
 
             <section id="tratamiento" aria-labelledby="tratamiento-h">
-                <h3 id="tratamiento-h">Tratamiento</h3>
+                <h2 id="tratamiento-h">Tratamiento</h2>
                 <p>Insulina inyectable, dieta saludable y ejercicio, cambios en el estilo de vida y medicamentos orales.
                 </p>
             </section>
 
             <section id="expectativas" aria-labelledby="expectativas-h">
-                <h3 id="expectativas-h">Expectativas</h3>
+                <h2 id="expectativas-h">Expectativas</h2>
                 <p>Con buen manejo, se puede llevar una vida activa y saludable, aunque requiere seguimiento constante
                     para prevenir complicaciones.</p>
             </section>
 
             <section id="recursos" aria-labelledby="recursos-h">
-                <h3 id="recursos-h">Recursos y lectura adicional</h3>
+                <h2 id="recursos-h">Recursos y lectura adicional</h2>
                 <ul>
                     <li>
                         <a href="https://www.mayoclinic.org/es/diseases-conditions/diabetes/symptoms-causes/syc-20371444"
@@ -122,19 +119,19 @@
             </section>
 
             <section id="imagen-diabetes" aria-labelledby="imagen-h">
-                <h3 id="imagen-h">Ilustración de diabetes</h3>
+                <h2 id="imagen-h">Ilustración de diabetes</h2>
                 <figure>
                     <img src="/img/diabetes.jpg" alt="Comparación de nivel normal y alto de glucosa en sangre"
-                        usemap="#image-map" width="900" height="450" aria-describedby="diabetes-desc" />
+                        usemap="#image-map" width="900" height="450" aria-describedby="diabetes-desc">
                     <figcaption>Comparación entre niveles normales y altos de glucosa en sangre.</figcaption>
                 </figure>
 
-                <div id="diabetes-desc">
-                    <h4>Descripción larga de la ilustración</h4>
+                <section id="diabetes-desc">
+                    <h3>Descripción larga de la ilustración</h3>
                     <p>La imagen muestra dos paneles: uno con niveles normales de glucosa en sangre y otro con niveles
                         altos. Cada panel incluye etiquetas que explican los valores, efectos sobre el cuerpo y posibles
                         complicaciones de la diabetes.</p>
-                </div>
+                </section>
 
                 <map name="image-map">
                     <area alt="Nivel Normal de Glucosa" title="Nivel Normal de Glucosa" href="https://www.ua.es/"
@@ -145,7 +142,7 @@
             </section>
 
             <section id="video" aria-labelledby="video-h">
-                <h3 id="video-h">Vídeo relacionado</h3>
+                <h2 id="video-h">Vídeo relacionado</h2>
                 <p>Vídeo informativo sobre la diabetes.</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/6GocZ96xomU"
                     title="Diabetes mellitus. Tipos, síntomas, diagnóstico y tratamiento. Clínica Universidad de Navarra"
@@ -154,23 +151,21 @@
                 </iframe>
             </section>
 
-            <section aria-labelledby="feedback-h">
-                <h3 id="feedback-h">¿Le ayudó esta página?</h3>
-                <form action="/formularios/feedback.html" method="get" aria-describedby="feedback-desc">
-                    <p id="feedback-desc">Seleccione una opción y envíe su valoración. Los campos marcados con * son
-                        obligatorios.</p>
+            <!-- Feedback -->
+            <section id="feedback" aria-labelledby="feedback-h">
+                <h2 id="feedback-h"><i class="bi bi-hand-thumbs-up"></i> ¿Le ayudó esta página?</h2>
+                <form action="/formularios/feedback.html" method="get">
                     <fieldset>
-                        <legend>Valoración de la página</legend>
+                        <legend>Valoración de la página *</legend>
                         <p>
-                            <input type="radio" id="val-si" name="valoracion" value="si" required>
-                            <label for="val-si">Sí</label>
+                            <input type="radio" id="val-si" name="valoracion" value="si" required aria-required="true">
+                            <label for="val-si"><i class="bi bi-hand-thumbs-up"></i> Sí</label>
                         </p>
                         <p>
                             <input type="radio" id="val-no" name="valoracion" value="no">
-                            <label for="val-no">No</label>
+                            <label for="val-no"><i class="bi bi-hand-thumbs-down"></i> No</label>
                         </p>
                     </fieldset>
-
                     <p>
                         <label for="comentarios">Comentarios (opcional)</label><br>
                         <textarea id="comentarios" name="comentarios" rows="4" cols="40"
@@ -178,34 +173,29 @@
                     </p>
 
                     <p>
-                        <button type="submit">Enviar valoración</button>
-                        <button type="reset">Restablecer</button>
+
+                        <button type="submit"><i class="bi bi-check-circle"></i> Enviar</button>
+                        <button type="reset"><i class="bi bi-arrow-counterclockwise"></i> Restablecer</button>
                     </p>
                 </form>
             </section>
-
-            <nav aria-label="Enlaces relacionados">
-                <ul>
-                    <li><a href="/wcag/mapa.html">Mapa del sitio (índice)</a></li>
-                </ul>
-            </nav>
-
         </article>
+
+        <aside aria-labelledby="aside-title">
+            <h2 id="aside-title"><i class="bi bi-link-45deg"></i> Enlaces rápidos</h2>
+            <ul>
+                <li><a href="/articulos/E/endocrinologia.html">Endocrinología</a></li>
+                <li><a href="/articulos/E/enfermedadesMetabolicas.html">Enfermedades metabólicas</a></li>
+            </ul>
+        </aside>
     </main>
 
-    <aside role="region" aria-labelledby="aside-title">
-        <h3 id="aside-title">Enlaces rápidos</h3>
-        <ul>
-            <li><a href="/articulos/E/endocrinologia.html">Endocrinología</a></li>
-            <li><a href="/articulos/E/enfermedadesMetabolicas.html">Enfermedades metabólicas</a></li>
-        </ul>
-    </aside>
-
-    <footer role="contentinfo">
+    <footer>
         <p>&copy; 2025 Enciclopedia Médica | Universidad de Alicante</p>
         <p>
-            <a href="/wcag/accesibilidad.html">Declaración de accesibilidad</a> |
-            <a href="/wcag/politicaPrivacidad.html">Política de privacidad</a>
+            <a href="/wcag/accesibilidad.html"><i class="bi bi-universal-access"></i> Declaración de accesibilidad</a> |
+            <a href="/wcag/politicaPrivacidad.html"><i class="bi bi-shield-lock"></i> Política de privacidad</a> |
+            <a href="/wcag/mapa.html"><i class="bi bi-map"></i> Mapa del sitio</a>
         </p>
     </footer>
 </body>
