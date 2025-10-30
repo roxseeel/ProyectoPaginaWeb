@@ -12,6 +12,11 @@
     --color-secundario-texto: #ff0;
 }
 
+.skip-link {
+    background: var(--color-primario);
+    color: #000;
+}
+
 body {
     background-color: var(--color-fondo);
     color: var(--color-texto);

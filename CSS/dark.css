@@ -12,6 +12,11 @@
     --color-secundario-texto: #bbb;
 }
 
+.skip-link {
+    background: var(--color-primario);
+    color: #000;
+}
+
 body {
     background-color: var(--color-fondo);
     color: var(--color-texto);
@@ -33,5 +38,26 @@ a {
 header,
 footer {
     background-color: var(--color-primario);
-    color: var(--color-blanco);
+}
+
+nav[aria-label="Menú principal"] li a {
+    color: #000;
+}
+
+nav[aria-label="Navegación alfabética"] a[aria-current="page"] {
+    color: #000;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    color: #000;
+}
+
+footer {
+    color: #000;
+}
+
+footer a {
+    color: #000;
 }
