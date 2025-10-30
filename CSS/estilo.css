@@ -1,3 +1,24 @@
+:root {
+    --color-primario: #0054a6;
+    /* Azul principal */
+    --color-primario-oscuro: #003f7f;
+    /* Azul más oscuro (hover) */
+    --color-azul-claro: #e6f0ff;
+    /* Azul claro (fondos suaves) */
+    --color-azul-muy-claro: #f0f8ff;
+    /* Azul muy claro (artículos, formularios) */
+    --color-blanco: #fff;
+    /* Blanco */
+    --color-texto: #222;
+    /* Gris oscuro para texto principal */
+    --color-borde: #ccc;
+    /* Gris claro para bordes */
+    --color-secundario-texto: #555;
+    /* Gris medio (figcaption, detalles) */
+    --color-fondo: #f9f9f9;
+    /* Fondo general */
+}
+
 /* RESET BÁSICO */
 * {
     margin: 0;
@@ -9,13 +30,13 @@ body {
     font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    color: #222;
-    background-color: #f9f9f9;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
 }
 
 /* ENLACES */
 a {
-    color: #0054a6;
+    color: var(--color-primario);
     text-decoration: none;
 }
 
@@ -30,8 +51,8 @@ a:focus {
     position: absolute;
     top: -40px;
     left: 0;
-    background: #0054a6;
-    color: #fff;
+    background: var(--color-primario);
+    color: var(--color-blanco);
     padding: 8px;
     z-index: 100;
 }
@@ -40,11 +61,16 @@ a:focus {
     top: 0;
 }
 
+section ul li a:focus {
+    outline: 2px dashed var(--color-primario-oscuro);
+}
+
+
 /* HEADER Y NAV */
 header {
-    background-color: #0054a6;
+    background-color: var(--color-primario);
     padding: 10px 20px;
-    color: #fff;
+    color: var(--color-blanco);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,7 +91,7 @@ nav[aria-label="Menú principal"] ul {
 }
 
 nav[aria-label="Menú principal"] li a {
-    color: #fff;
+    color: var(--color-blanco);
     font-weight: bold;
     position: relative;
 }
@@ -77,7 +103,7 @@ nav[aria-label="Menú principal"] li a {
 }
 
 .breadcrumb a {
-    color: #0054a6;
+    color: var(--color-primario);
 }
 
 .breadcrumb li {
@@ -90,7 +116,7 @@ main {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--color-blanco);
 }
 
 main h1 {
@@ -101,7 +127,7 @@ main h1 {
 main h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #0054a6;
+    color: var(--color-primario);
 }
 
 main h3 {
@@ -120,13 +146,64 @@ main ol {
     padding-left: 20px;
 }
 
+/* SECCIONES DEL MAPA */
+section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 10px;
+}
+
+section ul li {
+    margin-bottom: 8px;
+}
+
+section ul li a {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+section ul li a:hover {
+    background-color: var(--color-azul-claro);
+}
+
+/* LISTAS ANIDADAS (ARTÍCULOS ALFABÉTICOS) */
+section ul ul {
+    margin-top: 5px;
+    margin-left: 20px;
+    border-left: 3px solid var(--color-azul-claro);
+    padding-left: 10px;
+}
+
+section ul ul li {
+    margin-bottom: 4px;
+}
+
+section ul ul a {
+    font-size: 0.95rem;
+    color: var(--color-primario-oscuro);
+}
+
+/* Distribuir artículos en dos columnas horizontales */
+section.articulos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+section.articulos h2 {
+    grid-column: 1 / -1;
+    /* ocupa todo el ancho */
+}
+
 /* ARTICLE */
 article {
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-borde);
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 20px;
-    background-color: #f0f8ff;
+    background-color: var(--color-azul-muy-claro);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -139,8 +216,8 @@ article:hover {
 form {
     margin-top: 20px;
     padding: 15px;
-    background-color: #f0f8ff;
-    border-left: 5px solid #0054a6;
+    background-color: var(--color-azul-muy-claro);
+    border-left: 5px solid var(--color-primario);
     border-radius: 6px;
 }
 
@@ -162,7 +239,7 @@ textarea {
     padding: 8px;
     margin-top: 5px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-borde);
     border-radius: 4px;
 }
 
@@ -171,7 +248,7 @@ select[multiple] {
 }
 
 fieldset {
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-borde);
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 4px;
@@ -189,8 +266,8 @@ input[type="checkbox"] {
 button,
 input[type="submit"],
 input[type="reset"] {
-    background-color: #0054a6;
-    color: #fff;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
     padding: 8px 15px;
     border: none;
     border-radius: 4px;
@@ -204,14 +281,14 @@ button:hover,
 button:focus,
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-    background-color: #003f7f;
+    background-color: var(--color-primario-oscuro);
 }
 
 /* ASIDE */
 aside {
-    background-color: #e6f0ff;
+    background-color: var(--color-azul-claro);
     padding: 10px;
-    border-left: 5px solid #0054a6;
+    border-left: 5px solid var(--color-primario);
     margin-top: 20px;
     border-radius: 6px;
 }
@@ -239,13 +316,13 @@ table {
 
 th,
 td {
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-borde);
     padding: 8px;
     text-align: left;
 }
 
 th {
-    background-color: #e6f0ff;
+    background-color: var(--color-azul-claro);
 }
 
 caption {
@@ -268,23 +345,23 @@ nav[aria-label="Navegación alfabética"] li {
 nav[aria-label="Navegación alfabética"] a {
     display: inline-block;
     padding: 5px 10px;
-    background-color: #e6f0ff;
-    color: #0054a6;
+    background-color: var(--color-azul-claro);
+    color: var(--color-primario);
     border-radius: 4px;
     font-weight: bold;
     text-align: center;
 }
 
 nav[aria-label="Navegación alfabética"] a[aria-current="page"] {
-    background-color: #0054a6;
-    color: #fff;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
 }
 
 /* TOC */
 .toc {
-    background-color: #f0f8ff;
+    background-color: var(--color-azul-muy-claro);
     padding: 15px;
-    border-left: 5px solid #0054a6;
+    border-left: 5px solid var(--color-primario);
     border-radius: 6px;
     margin-bottom: 20px;
 }
@@ -307,12 +384,12 @@ figure img {
     max-width: 100%;
     height: auto;
     border-radius: 6px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-borde);
 }
 
 figcaption {
     font-size: 0.9rem;
-    color: #555;
+    color: var(--color-secundario-texto);
     margin-top: 5px;
 }
 
@@ -326,8 +403,8 @@ iframe {
 
 /* FOOTER */
 footer {
-    background-color: #0054a6;
-    color: #fff;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
     padding: 15px 20px;
     text-align: center;
     margin-top: 20px;
@@ -339,7 +416,7 @@ footer {
 }
 
 footer a {
-    color: #fff;
+    color: var(--color-blanco);
 }
 
 footer a:hover,
@@ -370,5 +447,9 @@ footer a:focus {
 
     table {
         font-size: 0.9rem;
+    }
+
+    section.articulos {
+        grid-template-columns: 1fr;
     }
 }

@@ -1,0 +1,53 @@
+@import "/CSS/estilo.css";
+
+:root {
+    --color-fondo: #000;
+    --color-texto: #fff;
+    --color-blanco: #fff;
+    --color-primario: #ffff00;
+    --color-primario-oscuro: #cccc00;
+    --color-azul-claro: #222;
+    --color-azul-muy-claro: #111;
+    --color-borde: #fff;
+    --color-secundario-texto: #ff0;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+main,
+article,
+form,
+aside,
+.toc {
+    background-color: var(--color-azul-muy-claro);
+    border-color: var(--color-borde);
+}
+
+a {
+    color: var(--color-primario);
+}
+
+nav[aria-label="Menú principal"] li a {
+    color: #000;
+}
+
+nav[aria-label="Navegación alfabética"] a[aria-current="page"] {
+    color: #000;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    color: #000;
+}
+
+footer {
+    color: #000;
+}
+
+footer a {
+    color: #000;
+}
