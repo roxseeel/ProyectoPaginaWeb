@@ -197,6 +197,19 @@ section.articulos h2 {
     /* ocupa todo el ancho */
 }
 
+section.documentos-accesibles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Hace que el título y el párrafo ocupen todo el ancho */
+section.documentos-accesibles h2,
+section.documentos-accesibles p {
+    grid-column: 1 / -1;
+}
+
+
 /* ARTICLE */
 article {
     border: 1px solid var(--color-borde);
