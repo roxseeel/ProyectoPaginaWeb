@@ -52,8 +52,54 @@
 
     <main id="maincontent">
         <h1><i class="bi bi-book-half"></i> Enfermedades metabolicas</h1>
-        <p>Página con información sobre diferentes trastornos que afectan el metabolismo y el equilibrio de sustancias
-            en el cuerpo.</p>
+        <p>
+            Esta página ofrece información sobre diversas enfermedades metabólicas, trastornos que afectan el
+            metabolismo y el equilibrio de sustancias en el cuerpo.
+            Incluye vídeos educativos con narración y subtítulos en varios idiomas, así como transcripciones completas
+            para facilitar el acceso a todos los usuarios, incluyendo personas con limitaciones auditivas o visuales.
+        </p>
+
+        <section>
+            <h2><i class="bi bi-camera-video"></i> Video Local</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="/videos/enfermedadesMetabolicas.mp4" type="video/mp4">
+                    <track src="/videos/subtitlesES.vtt" kind="subtitles" srclang="es" label="Español" default>
+                    <track src="/videos/subtitlesEN.vtt" kind="subtitles" srclang="en" label="English">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="bi bi-youtube"></i> Video desde YouTube</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/9FHwx_aiotA" title="Enfermedades Metabólicas"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="bi bi-cc-circle"></i> Video Amara</h2>
+            <div class="video-container">
+                <div class="amara-embed" data-url="http://www.youtube.com/watch?v=9FHwx_aiotA" data-team="null"></div>
+            </div>
+            <script src="https://amara.org/embedder-iframe"></script>
+        </section>
+
+
+        <section>
+            <h2><i class="bi bi-file-earmark-text"></i> Transcripciones</h2>
+            <ul>
+                <li><a href="/videos/transcripciones/transcripcionES.html">Leer la transcripción
+                        en español del video</a></li>
+                <li><a href="/videos/transcripciones/transcripcionEN.html">Leer la transcripción
+                        en inglés del video</a></li>
+                <li><a href="/videos/transcripciones/transcripcionCompleta.html">Leer la transcripción
+                        completa del video</a></li>
+            </ul>
+        </section>
     </main>
 
     <footer>
