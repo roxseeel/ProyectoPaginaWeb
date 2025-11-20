@@ -433,6 +433,12 @@ iframe {
     height: 100%;
 }
 
+.blog-frame {
+    width: 100%;
+    border: none;
+    height: 80vh;
+}
+
 /* FOOTER */
 footer {
     background-color: var(--color-primario);
