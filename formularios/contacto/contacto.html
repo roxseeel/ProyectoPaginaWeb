@@ -47,15 +47,15 @@
         <form action="respuestaContacto.html" method="get">
             <!-- Asunto -->
             <label for="asunto">Asunto: *</label>
-            <input type="text" id="asunto" name="asunto" required>
+            <input type="text" id="asunto" name="asunto" required autocomplete="off">
 
             <!-- Comentario -->
             <label for="comentario">Comentario o pregunta: *</label>
-            <textarea id="comentario" name="comentario" rows="5" cols="40" required></textarea>
+            <textarea id="comentario" name="comentario" rows="5" cols="40" required autocomplete="off"></textarea>
 
             <!-- Yo soy -->
             <label for="yo_soy">Yo soy:</label>
-            <select id="yo_soy" name="yo_soy">
+            <select id="yo_soy" name="yo_soy" autocomplete="organization-title">
                 <option value="paciente">Paciente</option>
                 <option value="cientifico">Científico</option>
                 <option value="medico">Médico</option>
@@ -66,7 +66,9 @@
 
             <!-- Fecha de nacimiento -->
             <label for="fecha_nacimiento">Fecha de nacimiento:</label>
-            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+            <input type="text" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="dd/mm/aaaa"
+                inputmode="numeric" pattern="\d{2}/\d{2}/\d{4}" aria-describedby="fechaFormato" autocomplete="bday">
+            <small id="fechaFormato">Formato: dd/mm/aaaa</small>
 
             <!-- Sexo -->
             <fieldset>
@@ -83,18 +85,17 @@
 
             <!-- Correo -->
             <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" placeholder="usuario@email.com">
+            <input type="email" id="email" name="email" placeholder="usuario@email.com" autocomplete="email">
 
             <!-- Información extra -->
             <input type="checkbox" id="info" name="info">
             <label for="info"><i class="bi bi-info-circle"></i> Deseo recibir más información</label>
 
-            <!-- Botón -->
-            <button type="submit" aria-label="Enviar la consulta"><i class="bi bi-send-fill"></i> Enviar
-                consulta</button>
-            <button type="reset" aria-label="Restablecer la consulta"><i class="bi bi-arrow-counterclockwise"></i>
-                Restablecer</button>
+            <!-- Botones -->
+            <button type="submit"><i class="bi bi-send-fill"></i> Enviar consulta</button>
+            <button type="reset"><i class="bi bi-arrow-counterclockwise"></i> Restablecer</button>
         </form>
+
     </main>
 
     <footer>

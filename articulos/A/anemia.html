@@ -167,8 +167,7 @@
                 <p>Para accesibilidad: consulte la transcripción oficial del vídeo si es necesario.</p>
             </section>
 
-            <!-- Feedback -->
-            <section id="feedback" aria-labelledby="feedback-h">
+            <section id="feedback-form" aria-labelledby="feedback-h">
                 <h2 id="feedback-h"><i class="bi bi-hand-thumbs-up"></i> ¿Le ayudó esta página?</h2>
                 <form action="/formularios/feedback.html" method="get">
                     <fieldset>
@@ -184,35 +183,36 @@
                     </fieldset>
                     <p>
                         <label for="comentarios">Comentarios (opcional)</label><br>
-                        <textarea id="comentarios" name="comentarios" rows="4" cols="40"
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="40" autocomplete="off"
                             placeholder="Escribe aquí tus comentarios..."></textarea>
                     </p>
 
                     <p>
-
                         <button type="submit"><i class="bi bi-check-circle"></i> Enviar</button>
                         <button type="reset"><i class="bi bi-arrow-counterclockwise"></i> Restablecer</button>
                     </p>
                 </form>
             </section>
-
-            <!-- Enlaces rápidos -->
-            <aside aria-labelledby="aside-title">
-                <h2 id="aside-title"><i class="bi bi-link-45deg"></i> Enlaces rápidos</h2>
-                <ul>
-                    <li><a href="/articulos/H/hematologia.html">Hematología</a></li>
-                    <li><a href="/articulos/D/deficienciasNutricionales.html">Deficiencias nutricionales</a></li>
-                </ul>
-            </aside>
         </article>
     </main>
+
+    <aside aria-labelledby="aside-title">
+        <h2 id="aside-title"><i class="bi bi-link-45deg"></i> Enlaces rápidos</h2>
+        <ul>
+            <li><a href="/articulos/H/hematologia.html">Hematología</a></li>
+            <li><a href="/articulos/D/deficienciasNutricionales.html">Deficiencias nutricionales</a></li>
+        </ul>
+    </aside>
 
     <footer>
         <p>&copy; 2025 Enciclopedia Médica | Universidad de Alicante</p>
         <p>
-            <a href="/wcag/accesibilidad.html"><i class="bi bi-universal-access"></i> Declaración de accesibilidad</a> |
-            <a href="/wcag/politicaPrivacidad.html"><i class="bi bi-shield-lock"></i> Política de privacidad</a> |
-            <a href="/wcag/mapa.html"><i class="bi bi-map"></i> Mapa del sitio</a>
+            <a href="/wcag/accesibilidad.html"><i class="bi bi-universal-access" role="img"
+                    aria-label="Símbolo de accesibilidad"></i> Declaración de accesibilidad</a> |
+            <a href="/wcag/politicaPrivacidad.html"><i class="bi bi-shield-lock" role="img"
+                    aria-label="Candado de seguridad"></i> Política de privacidad</a> |
+            <a href="/wcag/mapa.html"><i class="bi bi-map" role="img" aria-label="Mapa del sitio"></i> Mapa del
+                sitio</a>
         </p>
     </footer>
 </body>

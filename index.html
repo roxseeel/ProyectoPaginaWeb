@@ -24,6 +24,7 @@
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Saltar a contenido principal</a>
     <header>
         <img src="/img/logoUA.png" alt="Logo de la enciclopedia médica" width="200" height="60">
 
@@ -39,7 +40,7 @@
         </nav>
     </header>
 
-    <main aria-label="Contenido principal de la enciclopedia médica">
+    <main id="main-content" aria-label="Contenido principal de la enciclopedia médica">
         <section>
             <h1><i class="bi bi-book-half"></i> Enciclopedia médica</h1>
             <p>Esto es una enciclopedia médica.</p>
@@ -105,16 +106,14 @@
                 <h3><i class="bi bi-file-word"></i> Documentos Word</h3>
                 <ul>
                     <li>
-
-
                         <a href="docs/documento_accesible.docx" target="_blank"
-                            aria-label="Abrir documento Word accesible sobre deficiencias nutricionales (se abre en nueva pestaña)">
+                            aria-label="Ver documento Word accesible (se abre en nueva pestaña)">
                             <i class="bi bi-check-circle-fill"></i> Ver <span lang="en">Word</span> accesible
                         </a>
                     </li>
                     <li>
                         <a href="docs/documento_noAccesible.docx" target="_blank"
-                            aria-label="Abrir documento Word no accesible sobre deficiencias nutricionales (se abre en nueva pestaña)">
+                            aria-label="Ver documento Word no accesible (se abre en nueva pestaña)">
                             <i class="bi bi-x-circle-fill"></i> Ver <span lang="en">Word</span> no accesible
                         </a>
                     </li>
@@ -126,13 +125,13 @@
                 <ul>
                     <li>
                         <a href="docs/documento_accesible.pdf" target="_blank"
-                            aria-label="Abrir documento PDF accesible sobre deficiencias nutricionales (se abre en nueva pestaña)">
+                            aria-label="Ver documento PDF accesible (se abre en nueva pestaña)">
                             <i class="bi bi-check-circle-fill"></i> Ver <span lang="en">PDF</span> accesible
                         </a>
                     </li>
                     <li>
                         <a href="docs/documento_noAccesible.pdf" target="_blank"
-                            aria-label="Abrir documento PDF no accesible sobre deficiencias nutricionales (se abre en nueva pestaña)">
+                            aria-label="Ver documento PDF no accesible (se abre en nueva pestaña)">
                             <i class="bi bi-x-circle-fill"></i> Ver <span lang="en">PDF</span> no accesible
                         </a>
                     </li>
@@ -140,12 +139,13 @@
             </article>
         </section>
 
-        <aside>
-            <h2><i class="bi bi-hand-thumbs-up"></i> ¿Le ayudó esta página?</h2>
-            <button><i class="bi bi-check-circle"></i> Sí</button>
-            <button><i class="bi bi-x-circle"></i> No</button>
-        </aside>
     </main>
+
+    <aside aria-labelledby="feedback-title">
+        <h2 id="feedback-title"><i class="bi bi-hand-thumbs-up"></i> ¿Le ayudó esta página?</h2>
+        <button><i class="bi bi-check-circle"></i> Sí</button>
+        <button><i class="bi bi-x-circle"></i> No</button>
+    </aside>
 
     <footer>
         <p>&copy; 2025 Enciclopedia Médica | Universidad de Alicante</p>

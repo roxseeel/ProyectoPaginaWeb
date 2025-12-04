@@ -1,22 +1,25 @@
 :root {
-    --color-primario: #0054a6;
-    /* Azul principal */
-    --color-primario-oscuro: #003f7f;
-    /* Azul más oscuro (hover) */
-    --color-azul-claro: #e6f0ff;
-    /* Azul claro (fondos suaves) */
-    --color-azul-muy-claro: #f0f8ff;
-    /* Azul muy claro (artículos, formularios) */
-    --color-blanco: #fff;
-    /* Blanco */
-    --color-texto: #222;
-    /* Gris oscuro para texto principal */
-    --color-borde: #ccc;
-    /* Gris claro para bordes */
-    --color-secundario-texto: #555;
-    /* Gris medio (figcaption, detalles) */
-    --color-fondo: #f9f9f9;
-    /* Fondo general */
+    --color-primario: #003366;
+    /* Alto contraste, estable en pérdida de contraste */
+    --color-primario-oscuro: #00264d;
+    /* Muy oscuro → diferencia garantizada */
+
+    --color-azul-claro: #d4e4ff;
+    /* Mucho más contrastado que blanco */
+    --color-azul-muy-claro: #e3efff;
+    /* Diferencia notable respecto al fondo */
+
+    --color-blanco: #ffffff;
+
+    --color-texto: #111111;
+    /* Más oscuro → mejor legibilidad */
+    --color-secundario-texto: #333333;
+    /* Ya no se pierde en acromatopsia */
+
+    --color-borde: #999999;
+    /* Más oscuro ⇒ siempre visible */
+    --color-fondo: #f0f0f0;
+    /* Aumenta contraste de cajas blancas */
 }
 
 /* RESET BÁSICO */

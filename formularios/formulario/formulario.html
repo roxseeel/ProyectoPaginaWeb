@@ -57,18 +57,26 @@
                 <small id="correoHelp">Ingrese un correo válido, por ejemplo: usuario@email.com</small>
 
                 <label for="fecha">Selecciona una fecha: *</label>
-                <input type="date" id="fecha" name="fecha" min="2025-10-01" max="2026-12-31" required>
+                <input type="text" id="fecha" name="fecha" placeholder="dd/mm/aaaa" inputmode="numeric"
+                    pattern="\d{2}/\d{2}/\d{4}" required aria-describedby="formatoFechaHelp">
+                <small id="formatoFechaHelp">Formato de fecha: dd/mm/aaaa</small>
 
                 <label for="edad">Edad: *</label>
                 <input type="number" id="edad" name="edad" placeholder="Ej: 25" min="0" max="120" step="1" required>
 
-                <label for="sexo">Sexo: *</label>
-                <input type="radio" id="hombre" name="sexo" value="hombre" required>
-                <label for="hombre">Hombre</label>
-                <input type="radio" id="mujer" name="sexo" value="mujer">
-                <label for="mujer">Mujer</label>
-                <input type="radio" id="otro" name="sexo" value="otro">
-                <label for="otro">Otro</label>
+                <fieldset>
+                    <legend>Sexo *</legend>
+
+                    <input type="radio" id="hombre" name="sexo" value="hombre" required>
+                    <label for="hombre">Hombre</label>
+
+                    <input type="radio" id="mujer" name="sexo" value="mujer">
+                    <label for="mujer">Mujer</label>
+
+                    <input type="radio" id="otro" name="sexo" value="otro">
+                    <label for="otro">Otro</label>
+                </fieldset>
+
             </fieldset>
 
             <fieldset>
@@ -80,6 +88,7 @@
                 <input type="range" id="nivel" name="nivel" min="0" max="100" step="5" value="50"
                     aria-describedby="nivelHelp">
                 <small id="nivelHelp">Seleccione su nivel de satisfacción de 0 a 100.</small>
+
 
                 <input type="checkbox" id="info" name="info">
                 <label for="info"><i class="bi bi-info-circle"></i> Deseo recibir más información</label>
