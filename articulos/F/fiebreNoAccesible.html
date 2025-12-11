@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fiebre | Enciclopedia Médica</title>
+    <!-- Falta lang en html -->
+    <!-- No hay descripción ni metadatos accesibles -->
+    <link rel="stylesheet" href="/CSS/estilo.css">
+</head>
+
+<body>
+
+    <!-- No hay skip link -->
+
+    <header>
+        <!-- Imagen sin alt -->
+        <img src="/img/logoUA.png" width="200" height="60">
+
+        <!-- Nav sin aria-label -->
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/formularios/buscador/buscador.html">Buscador</a></li>
+                <li><a href="/medicamentos/medicamentos.html">Medicamentos</a></li>
+                <li><a href="/formularios/formulario/formulario.html">Formulario</a></li>
+                <li><a href="/formularios/contacto/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb sin aria-label -->
+    <nav class="breadcrumb">
+        <ol>
+            <li><a href="/index.html">Inicio</a> ></li>
+            <li><a href="/indices/f.html">Artículos con F</a> ></li>
+            <li>Fiebre</li>
+        </ol>
+    </nav>
+
+    <main>
+        <article>
+            <!-- Encabezado mal jerarquizado -->
+            <h3>Fiebre</h3>
+
+            <!-- Tabla de contenidos sin h2 -->
+            <nav class="toc">
+                <ol>
+                    <li><a href="#descripcion">Descripción</a></li>
+                    <li><a href="#causas">Causas</a></li>
+                    <li><a href="#sintomas">Síntomas</a></li>
+                    <li><a href="#tratamiento">Tratamiento</a></li>
+                    <li><a href="#imagen">Imagen</a></li>
+                    <li><a href="#video">Vídeo</a></li>
+                </ol>
+            </nav>
+
+            <section id="descripcion">
+                <!-- Salta jerarquía h3 → h1 -->
+                <h1>Descripción</h1>
+                <p>La fiebre es un aumento temporal en la temperatura corporal...</p>
+            </section>
+
+            <section id="causas">
+                <h4>Causas</h4>
+                <!-- Lista con <br> -->
+                <p>
+                    Causas frecuentes:<br>
+                    - Infecciones<br>
+                    - Golpe de calor<br>
+                    - Inflamación
+                </p>
+            </section>
+
+            <section id="sintomas">
+                <h6>Síntomas</h6>
+                <p>Escalofríos, sudoración, dolores musculares.</p>
+            </section>
+
+            <section id="tratamiento">
+                <h5>Tratamiento</h5>
+                <p>Reposo y medicamentos.</p>
+            </section>
+
+            <section id="imagen">
+                <h4>Imagen</h4>
+                <!-- Imagen sin alt -->
+                <img src="/img/fiebre.avif" width="500">
+                </map>
+            </section>
+
+            <!-- Tabla sin thead, caption ni th -->
+            <section>
+                <h4>Rangos de temperatura</h4>
+                <table border="1">
+                    <tr>
+                        <td>37.5°C</td>
+                        <td>Febrícula</td>
+                    </tr>
+                    <tr>
+                        <td>38.5°C</td>
+                        <td>Fiebre</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="video">
+                <h3>Video</h3>
+                <!-- iframe sin title -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uvBL7do_OXo"></iframe>
+            </section>
+
+            <section>
+                <h4>Formulario de opinión</h4>
+                <!-- Inputs sin labels -->
+                <form>
+                    Nombre: <input type="text"><br><br>
+                    Opinión: <textarea></textarea><br><br>
+                    <button>Enviar</button>
+                </form>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- Aside sin título -->
+    <aside>
+        <ul>
+            <li><a href="/articulos/A/anemia.html">Anemia</a></li>
+            <li><a href="/articulos/H/hematologia.html">Hematología</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>©2025 Enciclopedia Médica</p>
+        <p>
+            <a href="/wcag/accesibilidad.html">Declaración de accesibilidad</a> |
+            <a href="/wcag/politicaPrivacidad.html">Política de privacidad</a> |
+            <a href="/wcag/mapa.html">Mapa del sitio</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
